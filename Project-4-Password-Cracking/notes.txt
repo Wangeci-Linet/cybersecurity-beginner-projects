@@ -1,0 +1,22 @@
+Project: Password Cracking Lab (John the Ripper)
+Objective: Test password strength and hashes
+Tools: John the Ripper, Kali Linux
+
+Steps:
+1 Create hashed passwords:
+  echo -n "123456789" | openssl passwd -1 >> hashes.txt
+
+2. Run John the Ripper:
+   john hashes.txt
+
+3. Observe cracked passwords
+
+4. Document time-to-crack
+
+Observations:
+- Weak passwords like "123456789" and "password123" cracked immediately
+- Stronger passwords were harder to crack
+
+Recommendations:
+- Use long, complex passwords with a minimum of 10 characters. Include a combination numbers, uppercase and lowercase letters as well as special charaters.
+- Hash passwords with salt

@@ -1,0 +1,31 @@
+Project: Network Scanning & Mapping (Nmap)
+Objective: Perform reconnaissance on a local network
+Tool: Kali Linux, Nmap
+
+Steps & Observations:
+1. Find local IP address01:
+   - Command used was `ip a`
+   - Under eth0 my IP network range was 10.0.2.15/24
+
+2. Ping sweep to find live hosts:
+   - sudo nmap -sn 10.0.2.15/24
+   - Found hosts 10.0.2.2, 10.0.2.3, 10.0.2.15
+
+3. SYN scan to detect open ports:
+   - sudo nmap -sS 10.0.2.2
+   - Open ports 135 (TCP), 3306 (TCP)
+
+4. Service detection:
+   - sudo nmap -sV 10.0.2.2
+   - Port : 3306/tcp
+     Service: mysql
+     Version: MySQL 8.0.43
+
+5. OS detection:
+   - sudo nmap -O 10.0.2.2
+   - The target machine is running inside VirtualBox using NAT mode. NAT interferes with OS fingerprinting and the VM did not expose enough open/closed ports for detection.
+
+Recommendations:
+- Close unused ports.
+- Keep services updated.
+

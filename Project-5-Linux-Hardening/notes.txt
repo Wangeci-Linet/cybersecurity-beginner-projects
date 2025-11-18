@@ -1,0 +1,27 @@
+Project: Linux System Hardening (Firewall & Services)
+Objective: Secure Kali Linux VM
+Tools: Kali Linux, UFW
+
+Steps:
+1. Enable firewall:
+   sudo ufw enable
+
+2. Allow SSH only:
+   sudo ufw allow ssh
+
+3. Check status:
+   sudo ufw status
+
+4. Disable unused services:
+   sudo systemctl disable apache2
+
+Observations:
+- Firewall enabled successfully
+- Only essential services allowed
+- Unused services disabled
+
+Recommendations:
+-Regularly update system
+- Monitor logs
+- Use strong SSH keys
+

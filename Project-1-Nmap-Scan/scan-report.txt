@@ -1,0 +1,21 @@
+# Nmap 7.95 scan initiated Tue Nov 18 12:04:29 2025 as: /usr/lib/nmap/nmap -sV -O -oN scan-report.txt 10.0.2.2
+Nmap scan report for 10.0.2.2
+Host is up (0.0022s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MySQL 8.0.43
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|bridge|general purpose|printer
+Running (JUST GUESSING): AT&T embedded (98%), Oracle Virtualbox (94%), Slirp (94%), QEMU (94%), Konica Minolta embedded (88%), GNU Hurd (88%)
+OS CPE: cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu cpe:/h:konicaminolta:7035 cpe:/o:gnu:hurd
+Aggressive OS guesses: AT&T BGW210 voice gateway (98%), Oracle Virtualbox Slirp NAT bridge (94%), QEMU user mode network gateway (94%), Konica Minolta 7035 printer (88%), GNU Hurd 0.3 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 18 12:04:46 2025 -- 1 IP address (1 host up) scanned in 17.44 seconds

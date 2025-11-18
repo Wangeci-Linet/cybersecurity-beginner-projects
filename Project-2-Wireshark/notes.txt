@@ -1,0 +1,45 @@
+Project: Traffic Capture & Analysis (Wireshark)
+Objective: Capture and analyze network traffic
+Tools: Kali Linux, Wireshark
+
+Steps:
+1. Open Wireshark:
+   -sudo wireshark
+
+2. Select interface (wlan0 or eth0 depending on the VM setup):
+   -eth0 was selected  for monitoring live traffic.
+
+3. Start capture:
+   - Began capturing packets. No traffic appeared until network activity started.
+
+4. Generate traffic by browsing websites:
+   - Opened Firefox and visited http://example.com follwed by https://www.google.com.
+   - These actions produced DNS queries, DNS responses and HTTP/HTTPS traffic.
+   - Packets began appearing immediately after loading the sites.
+
+5. Generate additional traffic using ping:
+   - The command used is ping -c 4 google.com
+   - This introduced clear ICMP Echo Request and Echo Reply packets into the capture.
+
+6. Apply protocol filters:
+   - HTTP: http
+     Displayed HTTP GET requests and server responses
+   - DNS: dns
+     Showed DNS queries (example.com) and their corresponding A-record responses.
+   - ICMP: icmp
+     Isolated ping traffic (Echo Requests and Echo Replies).
+
+7. Analyze packet details:
+   - DNS packets contained query names and resoved IP addresses.
+   - HTTP packets showed GET requests, headers and server responses.
+   - ICMP traffic displayed Type 0 (Echo Reply).
+  Protocol layers inspected included: Ethernet, TCP and Application Layer sections.
+
+8. Save Capture:
+   - File saved as traffic_cature.pcapng
+
+Observations:
+- DNS queries and responses were captured when visiting ggogle.com and example.com.
+- HTTP GET requests were observed clearly before pinging.
+- ICMP traffic appeared later after running the ping command.
+- Using filters made it easy to isolate specific protocols and study their headers and behavior.
