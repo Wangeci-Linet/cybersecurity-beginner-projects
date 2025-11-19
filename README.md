@@ -9,3 +9,54 @@ Each project folder includes a detailed `notes.txt` file outlining the steps tak
 ## Projects Overview
 
 ### Project 1. Network Scanning & Mapping (Nmap)
+- **Objective:** Identify live hosts, open ports, running services and operating systems on a local virtual network.
+- **Tools Used:** Nmap, Kali Linux
+- **Files:**
+  - `notes.txt` - detailed steps and observations
+  - `scan-report.txt` - example of scan output
+- **Skills Gained:** Network reconnaissance, port scanning, service enumeration, OS detection.
+
+### Project 2. Traffic Capture & Analysis (Wireshark)
+- **Objective:** Capture and analyze network traffic to understand protocols and identify potential security issues.
+- **Tools Used:** Wireshark, Kali Linux
+- **Files:**
+  - `notes.txt` - step-by-step observations
+  - `traffic-capture.pcapng` - captured network packets
+  - `traffic-screenshots` - screenshots of traffic captured
+- **Skills Gained:** Packet capture, traffic filtering, protocol analysis, anomaly detection.
+
+### Project 3. Web Application Security Testing (Burp Suite + DVWA)
+- **Objective:** Perform basic web security testing on a vulnerable application to practice ethical hacking techniques.
+- **Tools Used:** Burp Suite Community Edition, DVWA, XAMPP
+- **Files:**
+  - `notes.txt` - testing methodoly and observations
+  - `burp-screenshots/` - screenshots of tests done
+- **Skills Gained:** Intercepting requests, testing for SQL Injection and XSS, documenting vulnerabilities.
+
+### Project 4. Password Cracking Lab (John the Ripper)
+- **Objective:** Understand password security and hash cracking in a safe lab environment.
+- **Tools Used:** John the Ripper, Kali Linux
+- **Files:**
+  - `notes.txt` - steps, observations and results
+  - `hashes.txt` - example of hashed passwords
+- **Skills Gained:** Password strength assessment, hash cracking, brute-force techniques.
+
+### Project 5. Linux System Hardening
+- **Objective:** Secure a Linux system by configuring firewall rules, disabling unnecessary services and enforcing secure SSH access.
+- **Tools Used:** UFW, Kali Linux
+- **Files:**
+  - `notes.txt` - step-by-step hardening process
+  - `hardening-screenshots` - screenshots of configurations done
+- **Skills Gained:** System hardening, firewall configuration, service management, SSH security.
+
+- - -
+
+## Key Takeaways
+
+- All projects were conducted in **safe, isolated lab environments** using a virtual machine.
+- The projects focus on **practical, hands-on skills** relevant for beginner cybersecurity roles.
+- Each project demonstrates **documentation and reporting skills**, crucial for professional cybersecurity work.
+
+- - -
+
+**Note:** This repository is intended for educational and portfolio use only. No unauthorized systems were accessed during these projects.
